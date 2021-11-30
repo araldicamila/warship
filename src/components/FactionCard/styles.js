@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import media from "styled-media-query";
 import { Effects, Fonts, Gradients } from "../../styles/variables";
 
 const themes = (theme) => {
@@ -40,16 +41,29 @@ export const FactionContainer = styled.div`
   border-radius: 30px;
   transition: 0.7s;
 
+  ${media.lessThan("small")`
+    width: 140px;
+    height: 160px;
+  `}
+
   ${({ theme }) => themes(theme)};
 
   img {
     width: 130px;
+
+    ${media.lessThan("small")`
+      width: 80px;
+    `}
   }
 
   p {
     ${Fonts.Oswald.bold54};
     color: var(--white);
     text-transform: capitalize;
+
+    ${media.lessThan("small")`
+      font-size: ${Fonts.Oswald.bold24};
+    `}
   }
 
   &:hover {
