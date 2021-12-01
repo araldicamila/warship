@@ -51,28 +51,28 @@ const Gradients = {
 const Fonts = {
   StarJedi: {
     reg54: css`
-      font-family: "StarJedi";
+      font-family: "Star Jedi";
       font-style: normal;
       font-weight: normal;
       font-size: 54px;
       line-height: 100%;
     `,
     reg16: css`
-      font-family: "StarJedi";
+      font-family: "Star Jedi";
       font-style: normal;
       font-weight: normal;
       font-size: 16px;
       line-height: 26px;
     `,
     reg12: css`
-      font-family: "StarJedi";
+      font-family: "Star Jedi";
       font-style: normal;
       font-weight: normal;
       font-size: 12px;
       line-height: 22px;
     `,
     reg26: css`
-      font-family: "StarJedi";
+      font-family: "Star Jedi";
       font-style: normal;
       font-weight: normal;
       font-size: 36px;

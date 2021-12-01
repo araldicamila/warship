@@ -15,6 +15,7 @@ export const FactionsContainer = styled.div`
 
     ${media.lessThan("small")`
       min-width: 321px;
+      padding: 0 0.5rem;
     `}
   }
 
