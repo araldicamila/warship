@@ -8,6 +8,8 @@ const Adjectives = () => {
       <button>Comprimento</button>
       <button>Largura</button>
       <button>Velocidade</button>
+
+      <button className="button-combat">COMBATER</button>
     </ContainerAdjectives>
   );
 };
