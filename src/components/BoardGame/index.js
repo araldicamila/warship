@@ -1,5 +1,6 @@
 import Adjectives from "../Adjectives";
 import Cards from "../Cards";
+import Score from "../Score";
 import { BoardGameContainer, WrapperCards } from "./styles";
 
 const BoardGame = () => {
@@ -12,6 +13,8 @@ const BoardGame = () => {
         <Adjectives />
         <Cards player="Computador" />
       </WrapperCards>
+
+      <Score />
     </BoardGameContainer>
   );
 };

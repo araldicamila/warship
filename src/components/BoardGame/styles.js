@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import media from "styled-media-query";
 
 import { Fonts } from "../../styles/variables";
 
@@ -10,6 +11,10 @@ export const BoardGameContainer = styled.div`
     ${Fonts.Oswald.bold24};
 
     margin-bottom: 2.5rem;
+
+    ${media.lessThan("large")`
+      margin-left: 2rem;
+    `}
   }
 `;
 

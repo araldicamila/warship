@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import media from "styled-media-query";
 import { Effects, Fonts } from "../../styles/variables";
 
 export const CardsContainerMain = styled.div`
@@ -25,7 +26,7 @@ export const CardsContainer = styled.div`
 
   display: flex;
   flex-direction: column;
-  padding: 0 1rem;
+  padding: 1rem;
 
   color: var(--white);
 
