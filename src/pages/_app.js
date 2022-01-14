@@ -1,4 +1,5 @@
 import Header from "../components/Header";
+import { ThemeProvider } from "../hooks/useTheme";
 import { GlobalStyle } from "../styles/global";
 
 function MyApp({ Component, pageProps }) {
@@ -6,7 +7,9 @@ function MyApp({ Component, pageProps }) {
     <>
       <GlobalStyle />
       <Header />
-      <Component {...pageProps} />
+      <ThemeProvider>
+        <Component {...pageProps} />
+      </ThemeProvider>
     </>
   );
 }
