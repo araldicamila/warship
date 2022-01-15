@@ -1,14 +1,22 @@
+import { useState } from "react";
+import ModalRules from "../ModalRules";
 import { HeaderContainer } from "./styles";
 
 const Header = () => {
+  const [openRules, setOpenRules] = useState(false);
+
   return (
     <HeaderContainer>
       <img src="images/logo.png" alt="Warship" />
 
-      <div>
+      <button onClick={() => setOpenRules(true)}>
         <img src="images/rules.png" alt="Rules" />
         <span>regras</span>
-      </div>
+      </button>
+
+      {openRules ? (
+        <ModalRules setOpenModal={() => setOpenRules(false)} />
+      ) : null}
     </HeaderContainer>
   );
 };

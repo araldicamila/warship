@@ -11,9 +11,14 @@ export const HeaderContainer = styled.header`
 
   padding: 1.5rem 10rem;
 
-  div {
+  button {
     display: flex;
     align-items: center;
+
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
 
     img {
       margin-right: 0.68rem;
