@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import media from "styled-media-query";
 import { Fonts } from "../../styles/variables";
 
 export const ScoreContainer = styled.div`
@@ -15,6 +16,10 @@ export const ScoreContainer = styled.div`
   margin: auto;
 
   margin-top: 80px;
+
+  ${media.lessThan("small")`
+    margin-top: 2.5rem;
+  `}
 
   &:before {
     content: "CARTAS";

@@ -1,14 +1,14 @@
 import { ScoreContainer, ScoreContainerResult } from "./styles";
 
-const Score = () => {
+const Score = ({ scoreOne, scoreTwo, theme }) => {
   return (
     <ScoreContainer>
-      <ScoreContainerResult theme="red">
-        <p>20</p>
+      <ScoreContainerResult theme={theme}>
+        <p>{scoreOne}</p>
       </ScoreContainerResult>
       <span>vs</span>
-      <ScoreContainerResult>
-        <p>20</p>
+      <ScoreContainerResult theme={theme === "red" ? "blue" : "red"}>
+        <p>{scoreTwo}</p>
       </ScoreContainerResult>
     </ScoreContainer>
   );

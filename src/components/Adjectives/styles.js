@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import media from "styled-media-query";
 import { Fonts } from "../../styles/variables";
 
 export const ContainerAdjectives = styled.div`
@@ -6,6 +7,17 @@ export const ContainerAdjectives = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 1.5rem;
+
+  ${media.lessThan("small")`
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 0.56rem;
+
+    max-width: 95%;
+  `}
 
   button {
     border: 1px solid var(--white);
@@ -18,6 +30,11 @@ export const ContainerAdjectives = styled.div`
     border-radius: 0.25rem;
     cursor: pointer;
     transition: 0.3s;
+
+    ${media.lessThan("small")`
+      padding: 0.2rem;
+      width: 90px;
+    `}
 
     &:hover {
       border: 1px solid var(--yellow);
@@ -34,5 +51,25 @@ export const ContainerAdjectives = styled.div`
     margin-top: 40px;
 
     padding: 0.3rem 0;
+
+    ${media.lessThan("small")`
+      margin-top: 1rem;
+    `}
   }
+`;
+
+export const ContainerButtons = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+
+  ${media.lessThan("small")`
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 0.56rem;
+  `}
 `;

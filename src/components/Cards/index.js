@@ -1,4 +1,9 @@
-import { CardsContainer, CardsContainerMain, WrapperText } from "./styles";
+import {
+  CardsContainer,
+  CardsContainerMain,
+  ContainerInformation,
+  WrapperText,
+} from "./styles";
 
 const Cards = ({ theme, player }) => {
   return (
@@ -7,28 +12,30 @@ const Cards = ({ theme, player }) => {
       <CardsContainer theme={theme}>
         <img src="images/empire.png" />
 
-        <h2>Millennium Falcon</h2>
+        <ContainerInformation>
+          <h2>Millennium Falcon</h2>
 
-        <WrapperText>
-          <p>Preço</p>
-          <b>1500,00</b>
-        </WrapperText>
-        <WrapperText>
-          <p>Comprimento</p>
-          <b>1500,00</b>
-        </WrapperText>
-        <WrapperText>
-          <p>Largura</p>
-          <b>1500,00</b>
-        </WrapperText>
-        <WrapperText>
-          <p>Altura</p>
-          <b>1500,00</b>
-        </WrapperText>
-        <WrapperText>
-          <p>Velocidade</p>
-          <b>1500,00</b>
-        </WrapperText>
+          <WrapperText>
+            <p>Preço</p>
+            <b>1500,00</b>
+          </WrapperText>
+          <WrapperText>
+            <p>Comprimento</p>
+            <b>1500,00</b>
+          </WrapperText>
+          <WrapperText>
+            <p>Largura</p>
+            <b>1500,00</b>
+          </WrapperText>
+          <WrapperText>
+            <p>Altura</p>
+            <b>1500,00</b>
+          </WrapperText>
+          <WrapperText>
+            <p>Velocidade</p>
+            <b>1500,00</b>
+          </WrapperText>
+        </ContainerInformation>
       </CardsContainer>
     </CardsContainerMain>
   );

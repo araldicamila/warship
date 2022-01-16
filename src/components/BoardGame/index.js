@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useTheme } from "../../hooks/useTheme";
 import Adjectives from "../Adjectives";
 import Cards from "../Cards";
@@ -6,6 +7,9 @@ import { BoardGameContainer, WrapperCards } from "./styles";
 
 const BoardGame = () => {
   const { theme } = useTheme();
+
+  const [scoreOne, setScoreOne] = useState(0);
+  const [scoreTwo, setScoreTwo] = useState(0);
 
   return (
     <BoardGameContainer>
@@ -17,7 +21,7 @@ const BoardGame = () => {
         <Cards theme={theme === "red" ? "blue" : "red"} player="Computador" />
       </WrapperCards>
 
-      <Score />
+      <Score theme={theme} scoreOne={scoreOne} scoreTwo={scoreTwo} />
     </BoardGameContainer>
   );
 };

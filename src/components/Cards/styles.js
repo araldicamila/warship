@@ -11,6 +11,10 @@ export const CardsContainerMain = styled.div`
     color: var(--yellow);
     margin-bottom: 1.5rem;
     letter-spacing: 0;
+
+    ${media.lessThan("small")`
+      display: none;
+  `}
   }
 `;
 
@@ -28,6 +32,15 @@ export const CardsContainer = styled.div`
   flex-direction: column;
   padding: 1rem;
 
+  ${media.lessThan("small")`
+    display: flex;
+    flex-direction: row;
+
+    width: 290px;
+    height: 160px;
+    padding: 0.5rem;
+  `}
+
   color: var(--white);
 
   h2 {
@@ -38,6 +51,10 @@ export const CardsContainer = styled.div`
     width: 127px;
 
     margin: 0 auto;
+
+    ${media.lessThan("small")`
+      width: 85px;
+    `}
   }
 `;
 
@@ -48,6 +65,10 @@ export const WrapperText = styled.div`
 
   margin-top: 0.8rem;
 
+  ${media.lessThan("small")`
+      margin-top: 0.12rem;
+    `}
+
   p {
     ${Fonts.Oswald.ligth24};
     color: var(--white) !important;
@@ -57,4 +78,9 @@ export const WrapperText = styled.div`
     ${Fonts.Oswald.medium};
     color: var(--white);
   }
+`;
+
+export const ContainerInformation = styled.div`
+  display: flex;
+  flex-direction: column;
 `;

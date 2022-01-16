@@ -11,6 +11,12 @@ export const HeaderContainer = styled.header`
 
   padding: 1.5rem 10rem;
 
+  .logo {
+    ${media.lessThan("medium")`
+    width: 83px;
+  `}
+  }
+
   button {
     display: flex;
     align-items: center;
@@ -19,6 +25,10 @@ export const HeaderContainer = styled.header`
     border: none;
     outline: none;
     cursor: pointer;
+
+    ${media.lessThan("medium")`
+      display: none;
+    `}
 
     img {
       margin-right: 0.68rem;

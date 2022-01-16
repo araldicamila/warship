@@ -7,7 +7,7 @@ const Header = () => {
 
   return (
     <HeaderContainer>
-      <img src="images/logo.png" alt="Warship" />
+      <img src="images/logo.png" alt="Warship" className="logo" />
 
       <button onClick={() => setOpenRules(true)}>
         <img src="images/rules.png" alt="Rules" />

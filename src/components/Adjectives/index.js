@@ -1,13 +1,15 @@
-import { ContainerAdjectives } from "./styles";
+import { ContainerAdjectives, ContainerButtons } from "./styles";
 
 const Adjectives = () => {
   return (
     <ContainerAdjectives>
-      <button>Preço</button>
-      <button>Altura</button>
-      <button>Comprimento</button>
-      <button>Largura</button>
-      <button>Velocidade</button>
+      <ContainerButtons>
+        <button>Preço</button>
+        <button>Altura</button>
+        <button>Comprimento</button>
+        <button>Largura</button>
+        <button>Velocidade</button>
+      </ContainerButtons>
 
       <button className="button-combat">COMBATER</button>
     </ContainerAdjectives>

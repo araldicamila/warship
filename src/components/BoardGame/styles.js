@@ -15,6 +15,10 @@ export const BoardGameContainer = styled.div`
     ${media.lessThan("large")`
       margin-left: 2rem;
     `}
+
+    ${media.lessThan("small")`
+      display: none;
+    `}
   }
 `;
 
@@ -23,4 +27,12 @@ export const WrapperCards = styled.div`
   justify-content: space-around;
 
   width: 100%;
+
+  ${media.lessThan("small")`
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+  `}
 `;
