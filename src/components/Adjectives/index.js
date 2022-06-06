@@ -1,17 +1,46 @@
-import { ContainerAdjectives, ContainerButtons } from "./styles";
+import {
+  ContainerAdjectives,
+  ContainerButtons,
+  ButtonContainer,
+} from "./styles";
 
-const Adjectives = () => {
+const Adjectives = ({ setAdjective, adjective }) => {
   return (
     <ContainerAdjectives>
       <ContainerButtons>
-        <button>Preço</button>
-        <button>Altura</button>
-        <button>Comprimento</button>
-        <button>Largura</button>
-        <button>Velocidade</button>
+        <ButtonContainer
+          isSelected={adjective === "Price"}
+          onClick={() => setAdjective("Price")}
+        >
+          Price
+        </ButtonContainer>
+        <ButtonContainer
+          isSelected={adjective === "Height"}
+          onClick={() => setAdjective("Height")}
+        >
+          Height
+        </ButtonContainer>
+        <ButtonContainer
+          isSelected={adjective === "Width"}
+          onClick={() => setAdjective("Width")}
+        >
+          Width
+        </ButtonContainer>
+        <ButtonContainer
+          isSelected={adjective === "Costs"}
+          onClick={() => setAdjective("Costs")}
+        >
+          Costs
+        </ButtonContainer>
+        <ButtonContainer
+          isSelected={adjective === "Velocity"}
+          onClick={() => setAdjective("Velocity")}
+        >
+          Velocity
+        </ButtonContainer>
       </ContainerButtons>
 
-      <button className="button-combat">COMBATER</button>
+      <button className="button-combat">FIGHT</button>
     </ContainerAdjectives>
   );
 };

@@ -22,7 +22,7 @@ export const ScoreContainer = styled.div`
   `}
 
   &:before {
-    content: "CARTAS";
+    content: "CARDS";
     color: var(--yellow);
     position: absolute;
     ${Fonts.Oswald.semi24};

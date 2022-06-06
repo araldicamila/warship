@@ -11,7 +11,7 @@ const Header = () => {
 
       <button onClick={() => setOpenRules(true)}>
         <img src="images/rules.png" alt="Rules" />
-        <span>regras</span>
+        <span>rules</span>
       </button>
 
       {openRules ? (

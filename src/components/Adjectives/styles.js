@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { css } from "styled-components";
 import media from "styled-media-query";
 import { Fonts } from "../../styles/variables";
 
@@ -72,4 +73,13 @@ export const ContainerButtons = styled.div`
 
     gap: 0.56rem;
   `}
+`;
+
+export const ButtonContainer = styled.button`
+  ${({ isSelected }) =>
+    isSelected &&
+    css`
+      border: 1px solid var(--yellow) !important;
+      color: var(--yellow) !important;
+    `}
 `;

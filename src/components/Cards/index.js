@@ -16,24 +16,24 @@ const Cards = ({ theme, player }) => {
           <h2>Millennium Falcon</h2>
 
           <WrapperText>
-            <p>Preço</p>
-            <b>1500,00</b>
+            <p>Price</p>
+            <b>1500.00</b>
           </WrapperText>
           <WrapperText>
-            <p>Comprimento</p>
-            <b>1500,00</b>
+            <p>Height</p>
+            <b>1500.00</b>
           </WrapperText>
           <WrapperText>
-            <p>Largura</p>
-            <b>1500,00</b>
+            <p>Width</p>
+            <b>1500.00</b>
           </WrapperText>
           <WrapperText>
-            <p>Altura</p>
-            <b>1500,00</b>
+            <p>Costs</p>
+            <b>1500.00</b>
           </WrapperText>
           <WrapperText>
-            <p>Velocidade</p>
-            <b>1500,00</b>
+            <p>Velocity</p>
+            <b>1500.00</b>
           </WrapperText>
         </ContainerInformation>
       </CardsContainer>

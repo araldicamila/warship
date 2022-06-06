@@ -11,14 +11,19 @@ const BoardGame = () => {
   const [scoreOne, setScoreOne] = useState(0);
   const [scoreTwo, setScoreTwo] = useState(0);
 
+  const [selectedAdjetive, setSelectedAdjetive] = useState();
+
   return (
     <BoardGameContainer>
-      <h1>Escolha uma característica:</h1>
+      <h1>Choose one adjective:</h1>
 
       <WrapperCards>
-        <Cards theme={theme} player="Você" />
-        <Adjectives />
-        <Cards theme={theme === "red" ? "blue" : "red"} player="Computador" />
+        <Cards theme={theme} player="You" />
+        <Adjectives
+          setAdjective={setSelectedAdjetive}
+          adjective={selectedAdjetive}
+        />
+        <Cards theme={theme === "red" ? "blue" : "red"} player="Computer" />
       </WrapperCards>
 
       <Score theme={theme} scoreOne={scoreOne} scoreTwo={scoreTwo} />

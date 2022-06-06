@@ -13,7 +13,7 @@ const Factions = () => {
         />
       </div>
 
-      <p className="factions-choose">Escolha um lado</p>
+      <p className="factions-choose">Choose your side</p>
     </FactionsContainer>
   );
 };
